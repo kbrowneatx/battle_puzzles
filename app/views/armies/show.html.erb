@@ -1,0 +1,22 @@
+<h1>Show: <%= @army.name %>  <%= link_to 'Edit', edit_army_path(@army), { :class => "btn btn-mini btn-warning" } %></h1>
+<% @army.divisions.each do |dv| %>
+    <h3><%= dv.name %></h3>
+    <ul class="thumbnails">
+      <% dv.battalions.each do |bn| %>
+          <li class="span3">
+            <div class="thumbnail">
+              <%= bn.name %><br />
+              <% if bn.unit_type.nil?  %>
+                <%= image_tag("blankunit.png") %><br />
+              <% else %>
+                <%= image_tag(bn.unit_type.img_name) %><br />
+              <% end %>
+              <%= bn.unit_type.name %>
+            </div>
+          </li>
+      <% end %>
+    </ul>
+<% end %>
+
+<p><span style="font: italic 10px;">Last played: <%= @army.updated_at.strftime("%m/%d/%Y") %></span></p>
+<p></p>

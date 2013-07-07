@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BattlePuzzles</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="row">
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<a class="brand" href="#">BattlePuzzles</a>
+				<ul class="nav" style="margin-left: 100px;">
+				<li><%= link_to 'Home', root_url %></li>
+				<li><%= link_to 'My Armies', armies_path %></li>
+				<li><%= link_to 'New Army', new_army_path %></li>
+				<li><%= link_to 'Users', users_path %></li>
+				<li>
+				</ul>
+				<ul class="nav pull-right" style="margin-right: 50px;">
+				<li>
+					<% if user_signed_in? %>
+					<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+					<% else %>
+					<%= link_to "sign in", new_user_session_path %>
+					<% end %>
+				</li>
+				</ul>
+			</div>
+			<div class="pull-right" style="font-size: 80%; margin-right: 69px;  background: #fff; opacity: 0.5;">
+				<% if user_signed_in? %>
+					Signed in as <%= current_user.email %>. Not you?
+				<% end %>
+			</div>
+		</div>
+	</div>
+	<div class="row" style="background: url(/assets/digcamohdr2.jpg);">
+	  <div class="container">
+ 	   <div class="span12">
+			<div>
+				<p class="text-left title">Puzzle Warfare<span style="font-face: Exo;">&trade;</span></p>
+				<p class="text-right title">easy to learn | lifetime to master</p>
+			</div>
+	   </div>
+	  </div>  
+	</div>
+	<div class="row">
+	  <div class="span1">
+	  </div>
+	  <div class="span10">
+			<%= yield %>
+	  </div>
+	  <div class="span1">
+	  </div>
+	</div>
+ <div class='container'>
+	<p class='footer-text'>&copy; Kevin Browne, 2013. All rights reserved.<br />
+		Army Index displayed on carousel created by James W Burke, courtesy of Bootsnipp.com.</p>
+ </div>
+
+</body>
+</html>

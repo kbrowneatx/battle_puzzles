@@ -1,0 +1,76 @@
+ @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+ @import url(http://fonts.googleapis.com/css?family=Exo);
+
+ $sansFontFamily: Oswald, Helvetica, Arial, sans-serif;
+ $serifFontFamily: Exo, 'Times New Roman', Times, serif;
+
+ @import 'bootstrap';
+
+body {
+  padding-top: 40px;
+}
+
+.thumbnail{
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.clearfix:before, .container:after { content: ""; display: table; }  
+.clearfix:after { clear: both; }  
+
+.blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: .5em 10px;
+}
+
+th, td.center-text{
+  text-align: center;
+}
+
+.text-left.title {
+  font: 40px Oswald;
+  font-weight: 700;
+  color: white;
+}
+.text-right.subtitle{
+  font: 12px Exo;
+  color: white;
+  margin-top: -20px;
+}
+
+.footer-text {
+  margin-top: 40px; 
+  text-align: center;
+}
+
+/* this is a thumbnail carousel for Bootstrap, created by William Woodgate, and published on Bootsnipp.com */
+
+/* this removes the default 20px margin and creates some padding space for the indicators and controls */
+.carousel {
+  margin-bottom: 0;
+  padding: 0 40px 30px 40px;
+}
+/* Reposition the controls slightly */
+.carousel-control {
+  left: -12px;
+}
+.carousel-control.right {
+  right: -12px;
+}
+/* Changes the position of the indicators */
+.carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+  background: #c0c0c0;
+}
+.carousel-indicators .active {
+background: #333333;
+}
+

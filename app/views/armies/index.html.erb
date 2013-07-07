@@ -1,0 +1,18 @@
+<h1>My Armies</h1>
+
+<!-- temp table to test functions -->
+<div id="armylist">
+  <%= render 'armies' %>
+
+</div>
+<p><%= link_to 'Create New Army', new_army_path, { class: "btn btn-success" } %></p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<!-- end table -->
+
+<!-- Main Area -->
+<div id="main_area">
+  <%= render 'armycarousel' %>
+</div>

@@ -1,0 +1,17 @@
+
+<div class="fields">
+  <div class="well">
+
+      <p >
+        <%= f.label :name %>
+        <%= f.text_field :name, placeholder: 'New-Div-Name', input_html: { class: "span2" } %>
+        <%= link_to_remove_fields "remove", f, { class: 'btn btn-mini btn-warning' } %>
+      </p>
+
+      <h5>Battalions</h5>
+
+       <%= f.fields_for :battalions do |builder| %>
+           <%= render 'battalion_fields', :f => builder %>
+       <% end %>
+  </div>
+</div>
