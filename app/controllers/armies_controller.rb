@@ -13,12 +13,12 @@ class ArmiesController < ApplicationController
 
   def new
     @eras = Era.all.map{|p| [p.name, p.id]}.insert(0, "Select an Era to Play")
-    @nations = Nation.all.map{|n| [n.name, n.id]}.insert(0, "Select a Nation to Play")
+    @nations = []
     @army = @user.armies.new
 
-    2.times do
+    (@army.divisions_allowed).times do
       division = @army.divisions.build
-      6.times { division.battalions.build }
+      (@army.battalions_allowed).times { division.battalions.build }
     end
   end
 
@@ -37,7 +37,7 @@ class ArmiesController < ApplicationController
       division = @army.divisions.build
       (@army.battalions_allowed).times { division.battalions.build }
     end
-    @types_array = UnitType.of_nat(@army.nation_id).map{|u| [u.id, u.name]}.insert(0, "Select Unit Type")
+    @types_array = UnitType.of_nat(@army.nation_id).map{|u| [u.name, u.id]}
   end
 
   def update

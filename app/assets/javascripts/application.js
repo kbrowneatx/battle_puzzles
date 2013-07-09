@@ -60,4 +60,12 @@ $(document).ready(function() {
     });
   });
 
+    $(document).on("click", ".open-SetUnitType", function () {
+        var myBattalionId = $(this).data('id');
+        $(".modal-body #btlnId").val( myBattalionId );
+        // As pointed out in comments,
+        // it is superfluous to have to manually call the modal.
+        // $('#addBookDialog').modal('show');
+    });
+
 });

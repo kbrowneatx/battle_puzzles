@@ -1,7 +1,7 @@
 
 <div class="fields">
   <div class="well">
-
+  <h4>Division</h4>
       <p >
         <%= f.label :name %>
         <%= f.text_field :name, placeholder: 'New-Div-Name', input_html: { class: "span2" } %>
@@ -13,5 +13,8 @@
        <%= f.fields_for :battalions do |builder| %>
            <%= render 'battalion_fields', :f => builder %>
        <% end %>
+    <p>
+      <%= link_to_add_fields("Add a Battalion", f, :battalions, class: "btn btn-mini btn-primary", :title => "Add a new Battalion to the Division.") %>
+    </p>
   </div>
 </div>

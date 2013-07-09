@@ -4,7 +4,7 @@
     <list default="true" id="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" name="Default" comment="" />
     <ignored path="battle_puzzles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/a.rxml" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373042956663" ignored="false" />
+    <file path="/a.rxml" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373312788824" ignored="false" />
     <file path="/a.html" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1372917318267" ignored="false" />
     <file path="/index.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1372980618033" ignored="false" />
     <file path="/a.rb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373042961226" ignored="false" />
@@ -12,16 +12,17 @@
     <file path="/_destroy.js.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1372973948079" ignored="false" />
     <file path="/new.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373121794312" ignored="false" />
     <file path="/_armies.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1372980550873" ignored="false" />
-    <file path="/application.js" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1372980030906" ignored="false" />
+    <file path="/application.js" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373348381132" ignored="false" />
     <file path="/show.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373042853295" ignored="false" />
     <file path="/edit.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373042339847" ignored="false" />
-    <file path="/_form.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373135205563" ignored="false" />
+    <file path="/_form.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373315640338" ignored="false" />
     <file path="/_error_messages.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373044349781" ignored="false" />
     <file path="/_divisions.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373044558384" ignored="false" />
     <file path="/application_helper.rb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373045919910" ignored="false" />
-    <file path="/armies_controller.rb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373124067114" ignored="false" />
-    <file path="/_battalion_fields.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373134952891" ignored="false" />
-    <file path="/_division_fields.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373135972741" ignored="false" />
+    <file path="/armies_controller.rb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373316601211" ignored="false" />
+    <file path="/_battalion_fields.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373381839198" ignored="false" />
+    <file path="/_division_fields.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373324499981" ignored="false" />
+    <file path="/a.css" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373312804019" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
       <file leaf-file-name="armies_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/armies_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="7" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0">
+            <state line="39" column="75" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -53,7 +54,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/armies/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="1294" selection-end="1294" vertical-scroll-proportion="-11.307693">
+            <state line="10" column="98" selection-start="513" selection-end="605" vertical-scroll-proportion="2.0">
               <folding />
             </state>
           </provider>
@@ -62,17 +63,28 @@
       <file leaf-file-name="_division_fields.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/armies/_division_fields.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="4" selection-start="362" selection-end="362" vertical-scroll-proportion="-8.5">
+            <state line="7" column="29" selection-start="227" selection-end="227" vertical-scroll-proportion="-4.576923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_battalion_fields.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_battalion_fields.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/armies/_battalion_fields.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
+            <state line="17" column="46" selection-start="813" selection-end="813" vertical-scroll-proportion="-11.115385">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="46" selection-start="1826" selection-end="1842" vertical-scroll-proportion="0.7597173">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,19 +109,19 @@
         <option value="$PROJECT_DIR$/app/views/armies/_divisions.html.erb" />
         <option value="$PROJECT_DIR$/app/views/armies/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/armies/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/armies_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/armies/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/armies_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/armies/_division_fields.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/armies/_battalion_fields.html.erb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="114" />
-    <option name="y" value="9" />
-    <option name="width" value="1201" />
+    <option name="x" value="98" />
+    <option name="y" value="56" />
+    <option name="width" value="1199" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -138,6 +150,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -343,18 +356,17 @@
         </subPane>
       </pane>
       <pane id="RailsProjectView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.sourceCode.SCSS" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Rails.Development: battle_puzzles">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -526,14 +538,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="114" y="9" width="1201" height="728" extended-state="0" />
+    <frame x="98" y="56" width="1199" height="728" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18437226" sideWeight="0.6700337" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1882146" sideWeight="0.6700337" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -613,9 +625,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/views/armies/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="65" selection-start="448" selection-end="448" vertical-scroll-proportion="0.28228784">
-          <folding />
-        </state>
+        <state line="9" column="65" selection-start="448" selection-end="448" vertical-scroll-proportion="0.28228784" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/armies/_error_messages.html.erb">
@@ -637,87 +647,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/armies/update_nations.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="75" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="75" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/armies/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="52" selection-start="76" selection-end="76" vertical-scroll-proportion="0.062730625">
-          <folding />
-        </state>
+        <state line="2" column="52" selection-start="76" selection-end="76" vertical-scroll-proportion="0.062730625" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/armies/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="46" selection-start="81" selection-end="81" vertical-scroll-proportion="0.062730625">
-          <folding />
-        </state>
+        <state line="2" column="46" selection-start="81" selection-end="81" vertical-scroll-proportion="0.062730625" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="52" selection-start="501" selection-end="541" vertical-scroll-proportion="0.501845">
-          <folding />
-        </state>
+        <state line="16" column="52" selection-start="501" selection-end="541" vertical-scroll-proportion="0.501845" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/simple_form.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.5137112">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.5137112" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/simple_form_bootstrap.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="85" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/armies_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="7" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/armies/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="1294" selection-end="1294" vertical-scroll-proportion="-11.307693">
+        <state line="39" column="75" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/armies/_division_fields.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="4" selection-start="362" selection-end="362" vertical-scroll-proportion="-8.5">
+        <state line="7" column="29" selection-start="227" selection-end="227" vertical-scroll-proportion="-4.576923">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+    <entry file="file://$PROJECT_DIR$/app/views/armies/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="28" selection-start="793" selection-end="793" vertical-scroll-proportion="0.2632541">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="85" selection-start="161" selection-end="161" vertical-scroll-proportion="0.059859157">
+        <state line="10" column="98" selection-start="513" selection-end="605" vertical-scroll-proportion="2.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/armies/_battalion_fields.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
+        <state line="17" column="46" selection-start="813" selection-end="813" vertical-scroll-proportion="-11.115385">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="46" selection-start="1826" selection-end="1842" vertical-scroll-proportion="0.7597173">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,41 +1,48 @@
 <%= simple_form_for @army, html: { class: 'form-horizontal' } do |f| %>
 
-    <fieldset>
-      <legend><%= "#{ @army.name } " unless @army.name.nil?  %>Army Information</legend>
-      <%= f.error_notification %>
-      <%= render('error_messages', :object => f.object) %>
+  <fieldset>
+    <legend><%= "#{ @army.name } " unless @army.name.nil?  %>Army Information</legend>
+    <%= f.error_notification %>
+    <%= render('error_messages', :object => f.object) %>
 
-      <%= f.input :name, autofocus: true, input_html: { class: "span5" } %>
+    <%= f.input :name, autofocus: true, input_html: { class: "span5" } %>
+    <% if @army.new_record? %>
       <%= f.association :era, label_method: :name, value_method: :id, input_html: { class: "span5", 'data-url' => update_nations_path } %>
       <%= f.input :nation_id, as: :select, collection: @nations, input_html: { class: "span5" } %>
+    <% else %>
       <div class="row">
         <div class="span2"></div>
-              <div class="alert alert-info span5">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <h4>Info:</h4>
-                <p> Divisions allowed: <%= f.object.divisions_allowed %></p>
-                <p> Battalions per division: <%= f.object.battalions_allowed %></p>
-              </div>
+        <div class="alert alert-info span5">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <h4>Note:</h4>
+          <p>Era and Nation settings are not editable for existing armies.</p>
+        </div>
         <div class="span5"></div>
       </div>
-    </fieldset>
+    <% end %>
 
-    <fieldset>
-      <% if @army.name.blank? %>
-          <legend>Divisions <%= "that are in your new army" %></legend>
-      <% else %>
-          <legend>Divisions <%= "that are in the  #{ @army.name }" %></legend>
-      <% end %>
+  </fieldset>
 
-      <%= f.fields_for :divisions do |builder| %>
-          <%= render('division_fields', :f => builder) %><br />
-      <% end %>
+
+  <fieldset>
+    <% if @army.name.blank? %>
+      <legend>Divisions <%= "that are in your new army" %></legend>
+    <% else %>
+      <legend>Units in your army <%= " (#{f.object.divisions_allowed} allowed with #{f.object.battalions_allowed} battalions each)" %></legend>
+    <% end %>
+
+    <%= f.fields_for :divisions do |builder| %>
+      <%= render('division_fields', :f => builder) %><br />
+    <% end %>
+
+    <p>
       <%= link_to_add_fields("Add a Division", f, :divisions, class: "btn btn-primary", :title => "Add a new Division to the Army.") %>
-      <p></p>
-    </fieldset>
+    </p>
+  </fieldset>
 
-    <div class='form-actions'>
-      <%= f.button :submit, 'Save', { class: "btn btn-success", title: "Save the changes to this Army." } %>
-      <%= link_to("Cancel", armies_path, :confirm => "Are you sure you want to cancel?  Any changes will be lost.", :class => "btn btn-inverse", :title => "Cancel the changes and return to the Home page.") %>
-    </div>
+  <div class='form-actions'>
+    <%= f.button :submit, 'Save', { class: "btn btn-success", title: "Save the changes to this Army." } %>
+    <%= link_to("Cancel", armies_path, :confirm => "Are you sure you want to cancel?  Any changes will be lost.", :class => "btn btn-inverse", :title => "Cancel the changes and return to the Home page.") %>
+  </div>
+
 <% end %>
