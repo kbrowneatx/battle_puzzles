@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  iname: MyString
+  name: MyString
+  move_pts: 1
+  strike_pts: 1
+  spec_pts: 1
+
+two:
+  iname: MyString
+  name: MyString
+  move_pts: 1
+  strike_pts: 1
+  spec_pts: 1
