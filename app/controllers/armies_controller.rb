@@ -9,6 +9,8 @@ class ArmiesController < ApplicationController
 
   def show
     @army = @user.armies.find params[:id]
+    @type_names_array = UnitType.where('nation_id == ?', @army.nation_id).pluck(:name)
+    @type_pics_array = UnitType.where('nation_id == ?', @army.nation_id).pluck(:img_name)
   end
 
   def new

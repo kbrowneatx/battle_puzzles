@@ -1,26 +1,23 @@
-<div class="fields">
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name, placeholder: 'New-Bn-Name', input_html: { class: "span2" } %>
-    <%= link_to "Set Unit Type", href="#myModal", { class: 'open-SetUnitType btn btn-mini btn-primary', 'data-toggle' => "modal", 'data-id' => f.object.unit_type_id } %>
-    <%= link_to_remove_fields "remove", f, { class: 'btn btn-mini btn-warning' } %>
-  </p>
-</div>
+<table id="btns-table" class="table table-hover table-striped">
+  <thead>
+  <th>Name</th>
+  <th>Unit Class</th>
+  <th>Description</th>
+  <th></th>
+  </thead>
+  <tbody>
+  <%= f.fields_for(:battalions) do |bn_form| %>
+    <tr class="fields">
+      <td><%= bn_form.text_field(:name, class: 'span2') %></td>
+      <td><%= bn_form.collection_select(:unit_class_id, UnitClass.selectable, :id, :name) %></td>
+      <td><%= bn_form.text_field(:health, class: 'span2', disabled: 'disabled') %></td>
+      <%# if current_page?(new_army_path) || current_page?(edit_army_path) %>
+      <td>
+        <%= link_to_remove_fields('<i class="icon-remove"></i>'.html_safe, bn_form, :title => "Delete this Battalion.") %>
+      </td>
+      <%# end %>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
 
-<!-- Modal -->
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Modal header</h3>
-  </div>
-  <div class="modal-body">
-    <p>Current:  <br/>
-    <input name='btlnId' id='btlnId' /></p>
-    <p>Select new:<br/>
-    <%= f.input :unit_type_id, as: :radio_buttons, collection: UnitType.all, input_html: { class: "span5", selected_value: f.object.unit_type_id } %></p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    <button class="btn btn-primary">Save changes</button>
-  </div>
-</div>

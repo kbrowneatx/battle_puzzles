@@ -1,7 +1,8 @@
 
 <div class="fields">
   <div class="well">
-  <h4>Division</h4>
+    <a data-target="#myModal" role="button" class="btn pull-right" data-toggle="modal"><i class="icon-th-list"></i></a>
+    <h4>Division</h4>
       <p >
         <%= f.label :name %>
         <%= f.text_field :name, placeholder: 'New-Div-Name', input_html: { class: "span2" } %>
@@ -10,9 +11,7 @@
 
       <h5>Battalions</h5>
 
-       <%= f.fields_for :battalions do |builder| %>
-           <%= render 'battalion_fields', :f => builder %>
-       <% end %>
+      <%= render 'battalion_fields', :f => f %>
     <p>
       <%= link_to_add_fields("Add a Battalion", f, :battalions, class: "btn btn-mini btn-primary", :title => "Add a new Battalion to the Division.") %>
     </p>

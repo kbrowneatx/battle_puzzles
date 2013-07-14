@@ -5,13 +5,14 @@
       <% dv.battalions.each do |bn| %>
           <li class="span3">
             <div class="thumbnail">
+              <h6><%= bn.unit_class.name %></h6>
               <%= bn.name %><br />
-              <% if bn.unit_type.nil?  %>
-                <%= image_tag("blankunit.png") %><br />
-              <% else %>
-                <%= image_tag(bn.unit_type.img_name) %><br />
-              <% end %>
-              <%= bn.unit_type.name %>
+              <% if bn.unit_class.nil?  %>
+                <%= image_tag("/assets/blankunit.png") %>
+            <% else %>
+                <%= image_tag("#{@type_pics_array[bn.unit_class_id - 1]}") %>
+            <% end %>
+              <%= @type_names_array[bn.unit_class_id - 1] %>
             </div>
           </li>
       <% end %>

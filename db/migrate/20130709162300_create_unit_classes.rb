@@ -1,7 +1,7 @@
 class CreateUnitClasses < ActiveRecord::Migration
   def change
     create_table :unit_classes do |t|
-      t.string :iname
+      t.string :internal_name
       t.string :name
       t.integer :move_pts
       t.integer :strike_pts

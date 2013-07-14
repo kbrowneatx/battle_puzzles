@@ -13,8 +13,23 @@ body {
 .thumbnail{
   border: 1px solid #ccc;
   text-align: center;
+  h6{
+    background: #7d8a6c;
+    color: white;
+    text-align: left;
+    margin: 0px;
+    padding: 2px 0 2px 4px;
+  }
 }
-
+.unitpane {
+  width: 500px;
+  h5 {
+    margin: 2px 0 0 0;
+  }
+  p{
+    margin: 0 0 2px 0;
+  }
+}
 .clearfix:before, .container:after { content: ""; display: table; }  
 .clearfix:after { clear: both; }  
 

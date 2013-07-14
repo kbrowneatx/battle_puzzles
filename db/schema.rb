@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130703023154) do
+ActiveRecord::Schema.define(:version => 20130709162300) do
 
   create_table "armies", :force => true do |t|
     t.string   "name"
@@ -32,13 +32,13 @@ ActiveRecord::Schema.define(:version => 20130703023154) do
     t.string   "name"
     t.integer  "health"
     t.integer  "division_id"
-    t.integer  "unit_type_id"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.integer  "unit_class_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   add_index "battalions", ["division_id"], :name => "index_battalions_on_division_id"
-  add_index "battalions", ["unit_type_id"], :name => "index_battalions_on_unit_type_id"
+  add_index "battalions", ["unit_class_id"], :name => "index_battalions_on_unit_class_id"
 
   create_table "divisions", :force => true do |t|
     t.string   "name"
@@ -65,17 +65,27 @@ ActiveRecord::Schema.define(:version => 20130703023154) do
 
   add_index "nations", ["era_id"], :name => "index_nations_on_era_id"
 
-  create_table "unit_types", :force => true do |t|
+  create_table "unit_classes", :force => true do |t|
+    t.string   "internal_name"
     t.string   "name"
-    t.integer  "era_id"
-    t.integer  "nation_id"
-    t.string   "img_name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.integer  "move_pts"
+    t.integer  "strike_pts"
+    t.integer  "spec_pts"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
-  add_index "unit_types", ["era_id"], :name => "index_unit_types_on_era_id"
+  create_table "unit_types", :force => true do |t|
+    t.string   "name"
+    t.integer  "nation_id"
+    t.integer  "unit_class_id"
+    t.string   "img_name"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
   add_index "unit_types", ["nation_id"], :name => "index_unit_types_on_nation_id"
+  add_index "unit_types", ["unit_class_id"], :name => "index_unit_types_on_unit_class_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "",       :null => false

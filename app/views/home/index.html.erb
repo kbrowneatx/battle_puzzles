@@ -1,7 +1,7 @@
 <div class="hero-unit">
 	<h1>Welcome! (Home#index)</h1>
 	<p>Puzzle Warfare is the easy to learn, hard to master game of historical conquest played out through puzzles. You must be logged in, in order to play the game.</p>
-	 <p>
+	<p>
 		<% if !user_signed_in? %>
 			<%= link_to "Sign in", new_user_session_path, { :class => "btn btn-primary btn-large" } %>
 		<% else %>
@@ -11,3 +11,4 @@
 		<% end %>
   </p>
 </div>
+

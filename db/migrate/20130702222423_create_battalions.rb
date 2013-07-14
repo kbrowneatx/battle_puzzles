@@ -4,11 +4,11 @@ class CreateBattalions < ActiveRecord::Migration
       t.string :name
       t.integer :health
       t.references :division
-      t.references :unit_type
+      t.references :unit_class
 
       t.timestamps
     end
     add_index :battalions, :division_id
-    add_index :battalions, :unit_type_id
+    add_index :battalions, :unit_class_id
   end
 end

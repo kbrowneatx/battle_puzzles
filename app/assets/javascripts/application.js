@@ -60,7 +60,7 @@ $(document).ready(function() {
     });
   });
 
-    $(document).on("click", ".open-SetUnitType", function () {
+    $(document).on("click", ".open-SetUnitClass", function () {
         var myBattalionId = $(this).data('id');
         $(".modal-body #btlnId").val( myBattalionId );
         // As pointed out in comments,
