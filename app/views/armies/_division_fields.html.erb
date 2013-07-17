@@ -2,18 +2,20 @@
 <div class="fields">
   <div class="well">
     <a data-target="#myModal" role="button" class="btn pull-right" data-toggle="modal"><i class="icon-th-list"></i></a>
-    <h4>Division</h4>
+    <fieldset>
+      <legend>Division: <%= "#{f.object.name}" unless f.object.name.nil? %> </legend>
       <p >
         <%= f.label :name %>
         <%= f.text_field :name, placeholder: 'New-Div-Name', input_html: { class: "span2" } %>
         <%= link_to_remove_fields "remove", f, { class: 'btn btn-mini btn-warning' } %>
       </p>
+    </fieldset>
 
-      <h5>Battalions</h5>
+    <fieldset>
 
-      <%= render 'battalion_fields', :f => f %>
-    <p>
+      <%= render 'battalions_table', :f => f %>
       <%= link_to_add_fields("Add a Battalion", f, :battalions, class: "btn btn-mini btn-primary", :title => "Add a new Battalion to the Division.") %>
-    </p>
+    <p> </p>
+    </fieldset>
   </div>
 </div>

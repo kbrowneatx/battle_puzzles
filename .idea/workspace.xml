@@ -2,68 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/armies/_unitpane.html.erb" />
-      <change type="DELETED" beforePath="C:\Sites\battle_puzzles\db\schema.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/blankunit.png" afterPath="$PROJECT_DIR$/app/assets/images/blankunit.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gbww2_arty1.png" afterPath="$PROJECT_DIR$/app/assets/images/gbww2_arty1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gbww2_arty2.png" afterPath="$PROJECT_DIR$/app/assets/images/gbww2_arty2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gbww2_inf1.png" afterPath="$PROJECT_DIR$/app/assets/images/gbww2_inf1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gbww2_inf2.png" afterPath="$PROJECT_DIR$/app/assets/images/gbww2_inf2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gbww2_mob1.png" afterPath="$PROJECT_DIR$/app/assets/images/gbww2_mob1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gbww2_mob2.png" afterPath="$PROJECT_DIR$/app/assets/images/gbww2_mob2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gbww2_scout.png" afterPath="$PROJECT_DIR$/app/assets/images/gbww2_scout.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gbww2_spec1.png" afterPath="$PROJECT_DIR$/app/assets/images/gbww2_spec1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gbww2_spec2.png" afterPath="$PROJECT_DIR$/app/assets/images/gbww2_spec2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gbww2_spec3.png" afterPath="$PROJECT_DIR$/app/assets/images/gbww2_spec3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gerww2_arty1.png" afterPath="$PROJECT_DIR$/app/assets/images/gerww2_arty1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gerww2_arty2.png" afterPath="$PROJECT_DIR$/app/assets/images/gerww2_arty2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gerww2_inf1.png" afterPath="$PROJECT_DIR$/app/assets/images/gerww2_inf1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gerww2_inf2.png" afterPath="$PROJECT_DIR$/app/assets/images/gerww2_inf2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gerww2_mob1.png" afterPath="$PROJECT_DIR$/app/assets/images/gerww2_mob1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gerww2_mob2.png" afterPath="$PROJECT_DIR$/app/assets/images/gerww2_mob2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gerww2_scout.png" afterPath="$PROJECT_DIR$/app/assets/images/gerww2_scout.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gerww2_spec1.png" afterPath="$PROJECT_DIR$/app/assets/images/gerww2_spec1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gerww2_spec2.png" afterPath="$PROJECT_DIR$/app/assets/images/gerww2_spec2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/gerww2_spec3.png" afterPath="$PROJECT_DIR$/app/assets/images/gerww2_spec3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/sovww2_arty1.png" afterPath="$PROJECT_DIR$/app/assets/images/sovww2_arty1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/sovww2_arty2.png" afterPath="$PROJECT_DIR$/app/assets/images/sovww2_arty2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/sovww2_inf1.png" afterPath="$PROJECT_DIR$/app/assets/images/sovww2_inf1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/sovww2_inf2.png" afterPath="$PROJECT_DIR$/app/assets/images/sovww2_inf2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/sovww2_mob1.png" afterPath="$PROJECT_DIR$/app/assets/images/sovww2_mob1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/sovww2_mob2.png" afterPath="$PROJECT_DIR$/app/assets/images/sovww2_mob2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/sovww2_scout.png" afterPath="$PROJECT_DIR$/app/assets/images/sovww2_scout.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/sovww2_spec1.png" afterPath="$PROJECT_DIR$/app/assets/images/sovww2_spec1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/sovww2_spec2.png" afterPath="$PROJECT_DIR$/app/assets/images/sovww2_spec2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/sovww2_spec3.png" afterPath="$PROJECT_DIR$/app/assets/images/sovww2_spec3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/usww2_arty1.png" afterPath="$PROJECT_DIR$/app/assets/images/usww2_arty1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/usww2_arty2.png" afterPath="$PROJECT_DIR$/app/assets/images/usww2_arty2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/usww2_inf1.png" afterPath="$PROJECT_DIR$/app/assets/images/usww2_inf1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/usww2_inf2.png" afterPath="$PROJECT_DIR$/app/assets/images/usww2_inf2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/usww2_mob1.png" afterPath="$PROJECT_DIR$/app/assets/images/usww2_mob1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/usww2_mob2.png" afterPath="$PROJECT_DIR$/app/assets/images/usww2_mob2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/usww2_scout.png" afterPath="$PROJECT_DIR$/app/assets/images/usww2_scout.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/usww2_spec1.png" afterPath="$PROJECT_DIR$/app/assets/images/usww2_spec1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/usww2_spec2.png" afterPath="$PROJECT_DIR$/app/assets/images/usww2_spec2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/usww2_spec3.png" afterPath="$PROJECT_DIR$/app/assets/images/usww2_spec3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130702222200_create_unit_types.rb" afterPath="$PROJECT_DIR$/db/migrate/20130702222200_create_unit_types.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130702222423_create_battalions.rb" afterPath="$PROJECT_DIR$/db/migrate/20130702222423_create_battalions.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130709162300_create_unit_classes.rb" afterPath="$PROJECT_DIR$/db/migrate/20130709162300_create_unit_classes.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/division.js" />
+      <change type="MOVED" beforePath="C:\Sites\battle_puzzles\app\views\armies\_battalion_fields.html.erb" afterPath="$PROJECT_DIR$/app/views/armies/_battalions_table.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/armies/_battalion_fields.html.erb" afterPath="$PROJECT_DIR$/app/views/armies/_battalion_fields.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/armies/_division_fields.html.erb" afterPath="$PROJECT_DIR$/app/views/armies/_division_fields.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/armies/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/armies/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/armies_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/armies_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/battalion.rb" afterPath="$PROJECT_DIR$/app/models/battalion.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/armies/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/armies/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/armies/show.html.erb" afterPath="$PROJECT_DIR$/app/views/armies/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/unit_class.rb" afterPath="$PROJECT_DIR$/app/models/unit_class.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/unit_type.rb" afterPath="$PROJECT_DIR$/app/models/unit_type.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="battle_puzzles.iws" />
@@ -77,17 +24,17 @@
     <file path="/new.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373680069213" ignored="false" />
     <file path="/_armies.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1372980550873" ignored="false" />
     <file path="/application.js" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373348381132" ignored="false" />
-    <file path="/show.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373766312109" ignored="false" />
+    <file path="/show.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1374022759857" ignored="false" />
     <file path="/edit.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373827111631" ignored="false" />
-    <file path="/_form.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373829911356" ignored="false" />
+    <file path="/_form.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373914911060" ignored="false" />
     <file path="/_error_messages.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373044349781" ignored="false" />
     <file path="/_divisions.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373044558384" ignored="false" />
     <file path="/application_helper.rb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373045919910" ignored="false" />
-    <file path="/armies_controller.rb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373744099880" ignored="false" />
-    <file path="/_battalion_fields.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373732679313" ignored="false" />
-    <file path="/_division_fields.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373829145498" ignored="false" />
+    <file path="/armies_controller.rb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1374022276145" ignored="false" />
+    <file path="/_battalion_fields.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1374027543764" ignored="false" />
+    <file path="/_division_fields.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1374028102362" ignored="false" />
     <file path="/a.css" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373312804019" ignored="false" />
-    <file path="/Dummy.txt" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373668423439" ignored="false" />
+    <file path="/Dummy.txt" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373914384396" ignored="false" />
     <file path="/unit_class.rb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373732621615" ignored="false" />
     <file path="/20130709162300_create_unit_classes.rb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373389924389" ignored="false" />
     <file path="/unit_type.rb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373390200044" ignored="false" />
@@ -95,8 +42,10 @@
     <file path="/20130702222200_create_unit_types.rb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373390446731" ignored="false" />
     <file path="/20130702222423_create_battalions.rb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373390496403" ignored="false" />
     <file path="/seeds.rb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373401338652" ignored="false" />
-    <file path="/application.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373773006011" ignored="false" />
+    <file path="/application.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1374029227766" ignored="false" />
     <file path="/_unitpane.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1373828110290" ignored="false" />
+    <file path="/division.js" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1374034217670" ignored="false" />
+    <file path="/_battalions_table.html.erb" changelist="4f32e3bd-0c76-49a6-b15d-6a69ff4fc88a" time="1374073421665" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,48 +70,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="armies_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/armies_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="4" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_division_fields.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/armies/_division_fields.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="55" selection-start="98" selection-end="98" vertical-scroll-proportion="-1.9615384">
+            <state line="16" column="97" selection-start="585" selection-end="676" vertical-scroll-proportion="-10.461538">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/armies/show.html.erb">
+      <file leaf-file-name="_battalions_table.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/armies/_battalions_table.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="57" selection-start="459" selection-end="500" vertical-scroll-proportion="0.34136546">
+            <state line="7" column="0" selection-start="158" selection-end="158" vertical-scroll-proportion="-4.576923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="4" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="division.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/division.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="22" selection-start="1511" selection-end="1511" vertical-scroll-proportion="-31.384615">
+            <state line="12" column="1" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile.lock" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/armies/edit.html.erb">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_battalion_fields.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/armies/_battalion_fields.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="28" selection-start="446" selection-end="446" vertical-scroll-proportion="-6.5384617">
               <folding />
             </state>
           </provider>
@@ -186,30 +155,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/unit_class.rb" />
-        <option value="$PROJECT_DIR$/app/views/armies/_battalion_fields.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/armies_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/armies/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_unitpane.html.erb" />
         <option value="$PROJECT_DIR$/app/views/armies/unitpane.html.erb" />
         <option value="$PROJECT_DIR$/app/views/armies/_unitpane.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/armies/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/armies/_battalion_field.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/armies/division.js" />
+        <option value="$PROJECT_DIR$/app/controllers/armies_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/armies/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/armies/_battalion_fields.html.erb" />
         <option value="$PROJECT_DIR$/app/views/armies/_division_fields.html.erb" />
         <option value="$PROJECT_DIR$/app/views/armies/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/armies/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/division.js" />
+        <option value="$PROJECT_DIR$/app/views/armies/_battalions_table.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="117" />
-    <option name="y" value="30" />
-    <option name="width" value="1232" />
-    <option name="height" value="699" />
+    <option name="x" value="104" />
+    <option name="width" value="1262" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -237,6 +205,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -345,6 +315,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="battle_puzzles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="battle_puzzles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -370,25 +358,46 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="battle_puzzles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="battle_puzzles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="settings.github" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="settings.github" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Sites\battle_puzzles\app\assets\javascripts" />
       <recent name="C:\Sites\battle_puzzles\app\views\armies" />
     </key>
   </component>
@@ -578,15 +587,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="117" y="30" width="1232" height="699" extended-state="0" />
-    <editor active="false" />
+    <frame x="104" y="0" width="1262" height="768" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285968" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26923078" sideWeight="0.67140317" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26583335" sideWeight="0.67140317" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -663,69 +672,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="47" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.5510563">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/battalion.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/unit_class.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="26" selection-start="154" selection-end="154" vertical-scroll-proportion="0.12431444">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/army.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/nation.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="20" selection-start="99" selection-end="205" vertical-scroll-proportion="0.3107861">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/armies/_battalion_fields.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="76" selection-start="380" selection-end="380" vertical-scroll-proportion="0.36811024">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/unit_type.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/armies_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="4" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="2" selection-start="568" selection-end="568" vertical-scroll-proportion="0.35349718">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="11" selection-start="505" selection-end="505" vertical-scroll-proportion="0.7906977">
@@ -735,45 +681,108 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/armies/_unitpane.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="10" selection-start="2054" selection-end="2054" vertical-scroll-proportion="1.9081633">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="22" selection-start="1511" selection-end="1511" vertical-scroll-proportion="-31.384615">
-          <folding />
-        </state>
+        <state line="55" column="10" selection-start="2054" selection-end="2054" vertical-scroll-proportion="1.9081633" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/armies/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="25" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.6666667">
+        <state line="42" column="28" selection-start="1697" selection-end="1697" vertical-scroll-proportion="1.3584906">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/armies/edit.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/armies_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/armies/_division_fields.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="55" selection-start="98" selection-end="98" vertical-scroll-proportion="-1.9615384">
+        <state line="44" column="12" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/armies/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="57" selection-start="459" selection-end="500" vertical-scroll-proportion="0.34136546">
+        <state line="4" column="43" selection-start="250" selection-end="250" vertical-scroll-proportion="0.14255765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="23" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.42857143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/armies/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/armies/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/armies/_battalions_table.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="158" selection-end="158" vertical-scroll-proportion="-4.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/armies/_division_fields.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="97" selection-start="585" selection-end="676" vertical-scroll-proportion="-10.461538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/armies/_battalion_fields.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="28" selection-start="446" selection-end="446" vertical-scroll-proportion="-6.5384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="4" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/division.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="1" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>

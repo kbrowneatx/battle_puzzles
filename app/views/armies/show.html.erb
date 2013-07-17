@@ -5,7 +5,7 @@
       <% dv.battalions.each do |bn| %>
           <li class="span3">
             <div class="thumbnail">
-              <h6><%= bn.unit_class.name %></h6>
+              <h6><%= bn.unit_class.name unless bn.unit_class.nil? %></h6>
               <%= bn.name %><br />
               <% if bn.unit_class.nil?  %>
                 <%= image_tag("/assets/blankunit.png") %>
