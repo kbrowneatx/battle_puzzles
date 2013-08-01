@@ -1,0 +1,20 @@
+<h1>Divisions#show</h1>
+<h3>Show: <%= @division.name %>  <%= link_to 'Edit', edit_division_path(@division), { :class => "btn btn-mini btn-warning" } %></h3>
+
+	<ul class="thumbnails">
+		<% @division.battalions.each do |bn| %>
+				<li class="span3">
+					<div class="thumbnail">
+						<h6><%= bn.unit_class.name unless bn.unit_class.nil? %></h6>
+						<%= bn.name %><br />
+						<% if bn.unit_class.nil?  %>
+							<%= image_tag("/assets/blankunit.png") %>
+					<% else %>
+							<%= image_tag("#{@type_pics_array[bn.unit_class_id - 1]}") %>
+					<% end %>
+						<%= @type_names_array[bn.unit_class_id - 1] %>
+					</div>
+				</li>
+		<% end %>
+	</ul>
+

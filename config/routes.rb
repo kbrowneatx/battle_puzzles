@@ -4,6 +4,7 @@ BattlePuzzles::Application.routes.draw do
 
   resources :users, :only => [:index, :show]
   resources :armies
+  resources :divisions
   
   get 'army/update_nations', :as => 'update_nations', :to => 'armies#update_nations'
   

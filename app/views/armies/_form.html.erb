@@ -5,7 +5,7 @@
     <%= f.error_notification %>
     <%= render('error_messages', :object => f.object) %>
 
-    <%= f.input :name, autofocus: true, input_html: { class: "span5" } %>
+    <%= f.input :name, input_html: { class: "span5" } %>
     <% if @army.new_record? %>
       <%= f.association :era, label_method: :name, value_method: :id, input_html: { class: "span5", 'data-url' => update_nations_path } %>
       <%= f.input :nation_id, as: :select, collection: @nations, input_html: { class: "span5" } %>

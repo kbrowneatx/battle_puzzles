@@ -8,7 +8,7 @@ class ArmiesController < ApplicationController
   end
 
   def show
-    @army = @user.armies.find params[:id]
+    # @army = @user.armies.find params[:id]
     @type_names_array = UnitType.where('nation_id == ?', @army.nation_id).pluck(:name)
     @type_pics_array = UnitType.where('nation_id == ?', @army.nation_id).pluck(:img_name)
   end
@@ -34,12 +34,12 @@ class ArmiesController < ApplicationController
   end
 
   def edit
-    @army = Army.find params[:id]
+    # @army = Army.find params[:id]
     if @army.divisions.count == 0 
       division = @army.divisions.build
       (@army.battalions_allowed).times { division.battalions.build }
     end
-    @types_array = UnitType.of_nat(@army.nation_id).map{|u| [u.name, u.id]}
+    @type_names_array = UnitType.where('nation_id == ?', @army.nation_id).pluck(:name)
   end
 
   def update

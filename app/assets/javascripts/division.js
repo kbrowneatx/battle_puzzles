@@ -45,6 +45,7 @@ var cfg = {
     tableId: '#battalions-table',
     inputFieldClassSelector: '.field',
     getTBodySelector: function() {
+        console.log(this.tableId);
         return this.tableId + ' tbody';
     }
 };
@@ -54,21 +55,23 @@ var cfg = {
 var formHandler = {
     // Public method for adding a new row to the table.
     appendFields: function () {
+
         // Get a handle on all the input fields in the form and detach them from the DOM (we'll attach them later).
-        var inputFields = $(cfg.formId + ' ' + cfg.inputFieldClassSelector);
+        //var inputFields = $(cfg.formId + ' ' + cfg.inputFieldClassSelector);
+        var inputFields = $('#new-battalion-fields :input').not(':button');
+        console.log('fields in inputFields: ' + inputFields.length);
         inputFields.detach();
-        console.log(inputFields.length);
         // Build the row and add it to the end of the table.
         rowBuilder.addRow(cfg.getTBodySelector(), inputFields);
 
         // Add the "Remove" link to the last cell.
+        console.log(rowBuilder.link);
         rowBuilder.link.appendTo($('tr:last td:last'));
     },
 
     // Public method for hiding the data entry fields.
     hideForm: function() {
         $(cfg.formId).modal('hide');
-        console.log('called hideForm');
     }
 };
 
@@ -89,20 +92,23 @@ var rowBuilder = function() {
         var newRow = row.clone();
 
         $(fields).map(function() {
-            console.log('called buildRow');
+            console.log(this.tableId);
             $(this).removeAttr('class');
-            return $('<td/>').append($(this));
-        }).appendTo(newRow);
+        //    return $('<td/>').append($(this));
+            var td = $('<td/>').append($(this));
+            console.log(td);
+            td.appendTo(newRow);
+        });//.appendTo(newRow);
 
         return newRow;
-    }
+    };
 
     // A public method for building a row and attaching it to the end of a <TBODY> element.
     var attachRow = function(tableBody, fields) {
         console.log('called attachRow');
         var row = buildRow(fields);
         $(row).appendTo($(tableBody));
-    }
+    };
 
     // Only expose public methods/properties.
     return {

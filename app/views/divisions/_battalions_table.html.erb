@@ -12,10 +12,13 @@
     <tr class="fields">
       <td><%= bn_form.text_field(:name, class: 'span3') %></td>
       <td><%= bn_form.collection_select(:unit_class_id, UnitClass.selectable, :id, :name) %></td>
-      <td><%= @type_names_array[bn_form.object.unit_class_id - 1] %></td>
+      <td>
+				<%= image_tag("/assets/icon-#{bn_form.object.unit_class_id}.png") unless bn_form.object.nil? %>
+				<%= @type_names_array[bn_form.object.unit_class_id - 1] unless bn_form.object.nil? %>
+			</td>
       <%# if current_page?(new_division_path) || current_page?(edit_division_path) %>
       <td>
-        <%= link_to_remove_fields('<i class="icon-remove"></i>'.html_safe, bn_form, :title => "Delete this Battalion.") %>
+        <%= link_to_remove_fields('<i class="icon-remove"></i>'.html_safe, bn_form, :title => "Delete this Battalion") %>
       </td>
       <%# end %>
     </tr>

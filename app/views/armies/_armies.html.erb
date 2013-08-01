@@ -1,26 +1,34 @@
-<table class="table table-striped">
-  <tr>
-    <th>Name</th>
-    <th>Era</th>
-    <th>Nation</th>
-    <th># of Divisions</th>
-    <th>Divisions Allowed</th>
-    <th>Battalions Allowed</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-  <% @armies.each do |army| %>
-      <tr>
-        <td><%= army.name %></td>
-        <td><%= army.era.name %></td>
-        <td><%= army.nation.name %></td>
-        <td class='center-text'><%= army.divisions.count %></td>
-        <td class='center-text'><%= army.divisions_allowed %></td>
-        <td class='center-text'><%= army.battalions_allowed %></td>
-        <td><%= link_to('<i class="icon-eye-open"/>'.html_safe, army, title: "View #{army.name}") %></td>
-        <td><%= link_to('<i class="icon-edit"/>'.html_safe, edit_army_path(army), title: "Edit #{army.name}") %></td>
-        <td><%= link_to('<i class="icon-remove"/>'.html_safe, army, method: :delete, remote: true, confirm: "Are you sure?", :title => "Delete #{ army.name }.") %></td>
-      </tr>
-  <% end %>
-</table>
+<% @armies.each do |army| %>
+	<div class="well" id="foo">
+		<%= army.name %> [Era: <%= army.era.name %>, as <%= army.nation.name %>]
+    <a class="btn pull-right" data-toggle="collapse" data-parent="#foo" href="#collapse-<%= army.id %>">hide</a>
+
+    <div id="collapse-<%= army.id %>" class="collapse in">
+			<table class="table table-striped">
+				<tr>
+					<th>Name</th>
+					<th>Units</th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+				<% army.divisions.each do |division| %>
+						<tr class="fields">
+							<td><%= division.name %></td>
+							<td>
+								<% division.battalions.each do |bn| %>
+									<%= image_tag("/assets/icon-#{bn.unit_class_id}.png") %>
+								<% end %>
+							</td>
+							<td><%= link_to('<i class="icon-eye-open"/>'.html_safe, division, title: "Show #{division.name}") %></td>
+							<td><%= link_to('<i class="icon-edit"/>'.html_safe, edit_division_path(division), title: "Edit #{division.name}") %></td>
+							<td><%= link_to('<i class="icon-remove"/>'.html_safe, division, method: :delete, remote: true, confirm: "Are you sure?", :title => "Delete #{ division.name }.") %></td>
+						</tr>
+				<% end %>
+			</table>
+				
+			</div>
+    </div>
+  </div>
+	<% end %>
+</div>

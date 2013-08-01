@@ -67,5 +67,8 @@ $(document).ready(function() {
         // it is superfluous to have to manually call the modal.
         // $('#addBookDialog').modal('show');
     });
+		
+});
+
 
 });
