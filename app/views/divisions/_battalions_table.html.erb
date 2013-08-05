@@ -13,8 +13,12 @@
       <td><%= bn_form.text_field(:name, class: 'span3') %></td>
       <td><%= bn_form.collection_select(:unit_class_id, UnitClass.selectable, :id, :name) %></td>
       <td>
-				<%= image_tag("/assets/icon-#{bn_form.object.unit_class_id}.png") unless bn_form.object.nil? %>
-				<%= @type_names_array[bn_form.object.unit_class_id - 1] unless bn_form.object.nil? %>
+				<% if bn_form.object.unit_class_id.nil? %>
+					<em>unassigned</em>
+				<% else %>
+					<%= image_tag("/assets/icon-#{bn_form.object.unit_class_id}.png") %>
+					<%= @type_names_array[bn_form.object.unit_class_id - 1] %>
+				<% end %>
 			</td>
       <%# if current_page?(new_division_path) || current_page?(edit_division_path) %>
       <td>

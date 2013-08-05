@@ -10,7 +10,11 @@ body {
   padding-top: 40px;
 }
 
-.thumbnail{
+th {
+  text-align: center;
+}
+
+.thumbnail.unit{
   border: 1px solid #ccc;
   text-align: center;
   h6{
@@ -40,52 +44,15 @@ body {
     padding: .5em 10px;
 }
 
-th, td.center-text{
-  text-align: center;
-}
-
-.text-left.title {
-  font: 40px Oswald;
-  font-weight: 700;
-  color: white;
-}
-.text-right.subtitle{
+.footer {
   font: 12px Exo;
-  color: white;
-  margin-top: -20px;
-}
-
-.footer-text {
   margin-top: 40px; 
-  text-align: center;
+  padding-top: 8px; 
+	border-top: 1px solid #ccc;
 }
 
-/* this is a thumbnail carousel for Bootstrap, created by William Woodgate, and published on Bootsnipp.com */
-
-/* this removes the default 20px margin and creates some padding space for the indicators and controls */
-.carousel {
-  margin-bottom: 0;
-  padding: 0 40px 30px 40px;
+.footer2 {
+  margin-top: 20px; 
+  padding: 5px; 
+	border-top: 1px solid #ccc;
 }
-/* Reposition the controls slightly */
-.carousel-control {
-  left: -12px;
-}
-.carousel-control.right {
-  right: -12px;
-}
-/* Changes the position of the indicators */
-.carousel-indicators {
-  right: 50%;
-  top: auto;
-  bottom: 0px;
-  margin-right: -19px;
-}
-/* Changes the colour of the indicators */
-.carousel-indicators li {
-  background: #c0c0c0;
-}
-.carousel-indicators .active {
-background: #333333;
-}
-

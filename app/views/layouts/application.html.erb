@@ -7,55 +7,112 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="row">
-		<div class="navbar navbar-fixed-top">
-			<div class="navbar-inner">
-				<a class="brand" href="#">BattlePuzzles</a>
-				<ul class="nav" style="margin-left: 100px;">
-				<li><%= link_to 'Home', root_url %></li>
-				<li><%= link_to 'My Armies', armies_path %></li>
-				<li><%= link_to 'New Army', new_army_path %></li>
-				<li><%= link_to 'Users', users_path %></li>
-				<li>
-				</ul>
-				<ul class="nav pull-right" style="margin-right: 50px;">
-				<li>
-					<% if user_signed_in? %>
-					<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-					<% else %>
-					<%= link_to "sign in", new_user_session_path %>
-					<% end %>
-				</li>
-				</ul>
+
+	<div class="head">
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="span6">
+					<div class="media">
+						<img src="/assets/bp_logo.png" class="pull-left media-object"> 
+						<h1 style="color: #616d55;">BattlePuzzles</h1>
+						<p class="muted">easy to learn | lifetime to master</p>
+					</div>
+				</div>
+				<div class="span4 offset2" style="margin-top:15px;">
+					<p class="text-right muted">
+						<% if user_signed_in? %>
+							<%= link_to "Sign out", destroy_user_session_path, { class: "btn" }, :method => :delete %>
+						<% else %>
+							<%= link_to "sign in", new_user_session_path, { class: "btn mini" } %>
+						<% end %>
+					<br />
+						<% if user_signed_in? %>
+							<small>Signed in as <%= current_user.email %></small>
+						<% end %>
+					</p>
+				</div>
 			</div>
-			<div class="pull-right" style="font-size: 80%; margin-right: 69px;  background: #fff; opacity: 0.5;">
-				<% if user_signed_in? %>
-					Signed in as <%= current_user.email %>. Not you?
-				<% end %>
+		</div>
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container">
+					<ul class="nav">
+						<li><%= link_to 'Home', root_url %></li>
+						<li><%= link_to 'Manage Armies', armies_path %></li>
+						<li><%= link_to 'New Army', new_army_path %></li>
+						<li><%= link_to 'Users (admin only)', users_path %></li>
+					</ul>                      
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	
+	<div class='container'>
+
+		<%= yield %>
+	</div>
+
+	
+	<div class='container'>
+		<div class='footer'>
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="span2" style="width: 15%;">
+						<ul class="unstyled">
+							<li><li>
+						</ul>
+					</div>
+					<div class="span2" style="width: 15%;">
+						<ul class="unstyled">
+							<li>Games<li>
+							<li><a href="#">BattlePuzzles</a></li>
+							<li><a href="#">QuestPuzzles</a></li>
+							<li><a href="#">NavalPuzzles</a></li>
+							<li><a href="#">Mobile apps</a></li>							
+						</ul>
+					</div>
+					<div class="span2" style="width: 15%;">
+						<ul class="unstyled">
+							<li>Support<li>
+							<li><a href="#">Forums</a></li>
+							<li><a href="#">Billing issues</a></li>
+							<li><a href="#">Site status</a></li>
+						</ul>
+					</div>
+					<div class="span2" style="width: 15%;">
+						<ul class="unstyled">
+							<li>Company<li>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					<div class="span2" style="width: 15%;">
+						<ul class="unstyled">
+							<li>Legal<li>
+							<li><a href="#">Terms of Service</a></li>
+							<li><a href="#">Privacy</a></li>
+							<li><a href="#">Security</a></li>
+							<li>reserved</li>							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid footer2">
+				<div class="span12">
+					<div class="span8">
+						<p class="muted pull-left">
+						Army Index and Footer design courtesy of <a href="#">Bootsnipp.com.</a>    
+						</p>
+					</div>
+					<div class="span4">
+						<p class="muted pull-right">&copy; 2013, Kevin Browne. All rights reserved</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="row" style="background: url(/assets/digcamohdr2.jpg);">
-	  <div class="container">
- 	   <div class="span12">
-			<div>
-				<p class="text-left title">Puzzle Warfare<span style="font-face: Exo;">&trade;</span></p>
-				<p class="text-right title">easy to learn | lifetime to master</p>
-			</div>
-	   </div>
-	  </div>  
-	</div>
-	<div class="row">
-    <div class="span1"></div>
-	  <div class="span11">
-			<%= yield %>
-	  </div>
-
-	</div>
- <div class='container'>
-	<p class='footer-text'>&copy; Kevin Browne, 2013. All rights reserved.<br />
-		Army Index displayed on carousel created by James W Burke, courtesy of Bootsnipp.com.</p>
- </div>
 
 </body>
 </html>

@@ -4,7 +4,7 @@
 	<ul class="thumbnails">
 		<% @division.battalions.each do |bn| %>
 				<li class="span3">
-					<div class="thumbnail">
+					<div class="thumbnail unit">
 						<h6><%= bn.unit_class.name unless bn.unit_class.nil? %></h6>
 						<%= bn.name %><br />
 						<% if bn.unit_class.nil?  %>

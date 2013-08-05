@@ -1,22 +1,26 @@
 <h1>Show: <%= @army.name %>  <%= link_to 'Edit', edit_army_path(@army), { :class => "btn btn-mini btn-warning" } %></h1>
 <% @army.divisions.each do |dv| %>
     <h3><%= dv.name %></h3>
-    <ul class="thumbnails">
-      <% dv.battalions.each do |bn| %>
-          <li class="span3">
-            <div class="thumbnail">
-              <h6><%= bn.unit_class.name unless bn.unit_class.nil? %></h6>
-              <%= bn.name %><br />
-              <% if bn.unit_class.nil?  %>
-                <%= image_tag("/assets/blankunit.png") %>
-            <% else %>
-                <%= image_tag("#{@type_pics_array[bn.unit_class_id - 1]}") %>
-            <% end %>
-              <%= @type_names_array[bn.unit_class_id - 1] %>
-            </div>
-          </li>
-      <% end %>
-    </ul>
+		<% if dv.battalions.count > 0 %>
+			<ul class="thumbnails">
+				<% dv.battalions.each do |bn| %>
+						<li class="span3">
+							<div class="thumbnail">
+								<h6><%= bn.unit_class.name unless bn.unit_class.nil? %></h6>
+								<%= bn.name %><br />
+								<% if bn.unit_class.nil?  %>
+									<%= image_tag("/assets/blankunit.png") %>
+							<% else %>
+									<%= image_tag("#{@type_pics_array[bn.unit_class_id - 1]}") %>
+							<% end %>
+								<%= @type_names_array[bn.unit_class_id - 1] %>
+							</div>
+						</li>
+				<% end %>
+			</ul>
+		<% else %>
+			<p><%= link_to "Click here to add battalions", edit_division_path(dv) %></p>
+		<% end %>
 <% end %>
 
 <p><span style="font: italic 10px;">Last played: <%= @army.updated_at.strftime("%m/%d/%Y") %></span></p>

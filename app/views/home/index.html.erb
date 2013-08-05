@@ -11,4 +11,62 @@
 		<% end %>
   </p>
 </div>
+<div class="span12">
+	<legend>Play an existing campaign:</legend>
+	<ul class="thumbnails">
+	<% if user_signed_in? %>
+		<% current_user.armies.each do |army| %>
+			<li class="span4">
+				<div class="thumbnail">
+					<img src="http://placehold.it/320x200" alt="ALT NAME">
+					<div class="caption">
+						<h3><%= army.name %></h3>
+						<p>Nation: <%= army.nation.name %></p>
+						<p>XP: <%= army.total_xp %></p>
+						<p>Campaign progress:</p>
+						<div class="progress">
+							<div class="bar" style="width: 60%;"></div>
+						</div>
+						<p align="center">
+							<%= link_to "Go!", army, { class: "btn btn-primary btn-block" } %>
+						</p>
+					</div>
+				</div>
+			</li>
+		<% end %>
+	<% end %>
+		
+		<li class="span4">
+			<div class="thumbnail">
+				<img src="http://placehold.it/320x200" alt="WW2">
+				<div class="caption">
+					<h3>World War II <small>(1939-45)</small></h3>
+					<p>Engage in desperate battles of breakthrough, exploitation and pursuit as you guide your nation to victory. Units include infantry, engineers, artillery, and tanks. Special powers include railroad guns, dreaded heavy tanks, and even carpet bombing!</p>
+					<p align="center"><a href="#" class="btn btn-primary btn-block">New Game</a></p>
+				</div>
+			</div>
+		</li>
+		<li class="span4">
+			<div class="thumbnail">
+				<img src="http://placehold.it/320x200" alt="Napoleonics">
+				<div class="caption">
+					<h3>Napoleonic Wars <small>(1800-15)</small></h3>
+					<p>Will you conquer Europe, or turn back the Gallic Hordes?  Units include infantry (in line, column and square), field and siege artillery, light and heavy cavalry. Special powers include bayonnet charges, cannister fire, and forcing your opponent to surrender!</p>
+					<p align="center"><a href="#" class="btn btn-primary btn-block">New Game</a></p>
+				</div>
+			</div>
+		</li>
+		<li class="span4">
+			<div class="thumbnail">
+				<img src="http://placehold.it/320x200" alt="Billy Yank vs Johnny Reb">
+				<div class="caption">
+					<h3>US Civil War <small>(1861-65)</small></h3>
+					<p>Will you fight to preserve the Union, or to raise the Stars &amp; Bars? Units include infantry (in line, column and in breastworks), field artillery, and cavalry. Special powers include repeating rifles, cannister fire, gatling guns, and the Rebel Yell!</p>
+					<p align="center"><a href="#" class="btn btn-primary btn-block">New Game</a></p>
+				</div>
+			</div>
+		</li>
+
+	</ul>
+</div>
 

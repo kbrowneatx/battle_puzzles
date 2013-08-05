@@ -1,18 +1,32 @@
 <% @armies.each do |army| %>
-	<div class="well" id="foo">
-		<%= army.name %> [Era: <%= army.era.name %>, as <%= army.nation.name %>]
-    <a class="btn pull-right" data-toggle="collapse" data-parent="#foo" href="#collapse-<%= army.id %>">hide</a>
+	<div class="well" id="armywell">
+    
+    
+		<h2><%= army.name %></h2>
+		<table class="table">
+			<tr>
+				<td>xp: <strong><%= army.total_xp %></strong></td>
+				<td>era: <strong><%= army.era.name %></strong></td>
+				<td>playing as: <strong><%= army.nation.name %></strong></td>
+				<td><a data-toggle="collapse" data-parent="#armywell" href="#collapse-<%= army.id %>"><i class="icon-eye-open"/></a></td>
+				<td><%= link_to('<i class="icon-edit"/>'.html_safe, edit_army_path(army), title: "Edit #{army.name}") %></td>
+				<td><%= link_to('<i class="icon-remove"/>'.html_safe, army, method: :delete, remote: true, confirm: "Are you sure?", title: "Delete #{army.name}") %></td>
+			</tr>
+		</table>
+		
 
     <div id="collapse-<%= army.id %>" class="collapse in">
-			<table class="table table-striped">
-				<tr>
-					<th>Name</th>
-					<th>Units</th>
-					<th></th>
-					<th></th>
-					<th></th>
-				</tr>
-				<% army.divisions.each do |division| %>
+			<p>&nbsp;</p>
+			<% if army.divisions.count == 0 %>
+				<%= link_to "Click here to add divisions", edit_army_path(army) %>
+			<% else %>
+				<table class="table table-striped">
+					<tr>
+						<th>Name</th>
+						<th>Units</th>
+						<th colspan="3">Commands</th>
+					</tr>
+					<% army.divisions.each do |division| %>
 						<tr class="fields">
 							<td><%= division.name %></td>
 							<td>
@@ -24,11 +38,9 @@
 							<td><%= link_to('<i class="icon-edit"/>'.html_safe, edit_division_path(division), title: "Edit #{division.name}") %></td>
 							<td><%= link_to('<i class="icon-remove"/>'.html_safe, division, method: :delete, remote: true, confirm: "Are you sure?", :title => "Delete #{ division.name }.") %></td>
 						</tr>
-				<% end %>
-			</table>
-				
-			</div>
+					<% end %>
+				</table>
+			<% end %>
     </div>
   </div>
-	<% end %>
-</div>
+<% end %>

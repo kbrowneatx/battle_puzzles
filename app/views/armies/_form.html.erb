@@ -3,7 +3,6 @@
   <fieldset>
     <legend><%= "#{ @army.name } " unless @army.name.nil?  %>Army Information</legend>
     <%= f.error_notification %>
-    <%= render('error_messages', :object => f.object) %>
 
     <%= f.input :name, input_html: { class: "span5" } %>
     <% if @army.new_record? %>
