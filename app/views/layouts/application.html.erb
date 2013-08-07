@@ -21,13 +21,10 @@
 				<div class="span4 offset2" style="margin-top:15px;">
 					<p class="text-right muted">
 						<% if user_signed_in? %>
+							<small>Signed in as <%= current_user.email %></small> <br />
 							<%= link_to "Sign out", destroy_user_session_path, { class: "btn" }, :method => :delete %>
 						<% else %>
-							<%= link_to "sign in", new_user_session_path, { class: "btn mini" } %>
-						<% end %>
-					<br />
-						<% if user_signed_in? %>
-							<small>Signed in as <%= current_user.email %></small>
+							<%= link_to "sign in", new_user_session_path, { class: "btn" } %> or <%= link_to "register", new_user_registration_path, { class: "btn" } %>
 						<% end %>
 					</p>
 				</div>

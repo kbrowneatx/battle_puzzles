@@ -3,14 +3,15 @@
 	<p>Puzzle Warfare is the easy to learn, hard to master game of historical conquest played out through puzzles. You must be logged in, in order to play the game.</p>
 	<p>
 		<% if !user_signed_in? %>
-			<%= link_to "Sign in", new_user_session_path, { :class => "btn btn-primary btn-large" } %>
+			<%= link_to "Sign in", new_user_session_path, { class: "btn btn-primary btn-large" } %>
 		<% else %>
 			<h3 class="notice"><%= notice %></h3>
 			<p>You have <%= current_user.armies.count %> armies.</p>
-			<%= link_to "View My Armies", armies_path, { :class => "btn btn-primary btn-large" } %>
+			<%= link_to "View My Armies", armies_path, { class: "btn btn-primary btn-large" } %>
 		<% end %>
   </p>
 </div>
+
 <div class="span12">
 	<legend>Play an existing campaign:</legend>
 	<ul class="thumbnails">

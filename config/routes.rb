@@ -2,7 +2,7 @@ BattlePuzzles::Application.routes.draw do
 
   devise_for :users
 
-  resources :users, :only => [:index, :show]
+  resources :users
   resources :armies
   resources :divisions
   
